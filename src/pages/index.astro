@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
+import Linkedln from '../components/icons/LinkedInIcon.astro'
+import SocialPill from '../components/SocialPill.astro';
+import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
+import GitHubIcon from '../components/icons/GitHubIcon.astro';
+import MailIcon from '../components/icons/MailIcon.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -20,11 +25,20 @@ import Badge from '../components/Badge.astro';
 			Desarrollador Mobile y Web
 			.</span> <span class="text-red-100/45"> De Madrid, España </span> </h2>
 		
-			<ul>
-				<li>
-					<a href=""></a>
-				</li>
-			</ul>
+			<nav class="flex gap-4 mt-8 flex-wrap">
+					<SocialPill href="https://www.linkedin.com/in/pablo-hurtado-gonzalo-9a5478237/">
+						<LinkedInIcon class="size-4 md:size-6" />
+						 LinkedIn
+					  </SocialPill>
+					  <SocialPill href="https://github.com/Coshiloco">
+						<GitHubIcon class="size-4 md:size-6" />
+						 GitHub
+					  </SocialPill>
+					  <SocialPill href="mailto:pablohurtadohg@gmail.com">
+						<MailIcon class="size-4 md:size-6" />
+						 pablohurtadohg@gmail.com
+					  </SocialPill>
+			</nav>
 		</section>
 	</main>
 </Layout>
